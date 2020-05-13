@@ -16,7 +16,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 
   # HEROKU SETTINGS
   allow do
-    origins 'https://aoe-tribute-api.herokuapp.com/' # change THIS to heroku app (http://______.herokuapp.com)
+    origins 'https://aoe-tribute-client.herokuapp.com/' # change THIS to heroku app (http://______.herokuapp.com)
 
     resource '*',
       headers: :any,
