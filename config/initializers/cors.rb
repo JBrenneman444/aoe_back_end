@@ -7,7 +7,15 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'aoe-tribute-client.herokuapp.com/', 'localhost:3001'
+    origins 'https://aoe-tribute-client.herokuapp.com/' # need 's' because heroku link has it
+
+    resource '*',
+      headers: :any,
+      methods: [:get, :post, :put, :patch, :delete, :options, :head]
+  end
+
+  allow do
+    origins 'http://localhost:3001' # localhost does not
 
     resource '*',
       headers: :any,
