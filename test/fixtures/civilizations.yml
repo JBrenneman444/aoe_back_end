@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  civ_name: MyString
+  army_styles: MyString
+  unique_units: MyString
+
+two:
+  civ_name: MyString
+  army_styles: MyString
+  unique_units: MyString
