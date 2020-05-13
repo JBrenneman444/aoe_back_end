@@ -6,17 +6,8 @@
 # Read more: https://github.com/cyu/rack-cors
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
-  # allow do
-  #   origins 'localhost:3001'
-
-  #   resource '*',
-  #     headers: :any,
-  #     methods: [:get, :post, :put, :patch, :delete, :options, :head]
-  # end
-
-  # HEROKU SETTINGS
   allow do
-    origins '*' # change THIS to heroku app (http://______.herokuapp.com)
+    origins 'aoe-tribute-client.herokuapp.com/', 'localhost:3001'
 
     resource '*',
       headers: :any,
